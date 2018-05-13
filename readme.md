@@ -17,5 +17,3 @@ Then visit [http://localhost:8080](http://localhost:8080). To run a build withou
 $ npm run build:dev # Builds development package
 ```
 
-Open [http://localhost:8080](http://localhost:8080)
-

@@ -1,0 +1,17 @@
+.app-shell {
+    display: flex;
+    min-height: 100vh;
+    flex-direction: column;
+}
+
+.app-footer {
+    text-align: right;
+    padding: 3em 1em 0 0;
+    background: #ccc;
+    min-height: 100px;
+}
+
+.pull-right {
+    position: absolute;
+    right: 0;
+}

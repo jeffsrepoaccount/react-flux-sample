@@ -30,6 +30,7 @@ class TodoStore extends Store {
     handleActions(action) {
         switch(action.type) {
             case Actions.TODO_FETCH:
+                // No fetching necessary since all TODOs are stored in memory
                 this.emit('change');
                 return this;
             case Actions.TODO_ADD:

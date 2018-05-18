@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 
-import Shell from '../Shell.jsx';
+import Shell from '../layout/Shell.jsx';
 
 export default class NotFound extends Component {
     constructor(props) {

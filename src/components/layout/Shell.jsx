@@ -14,14 +14,6 @@ export default class Shell extends Component {
         this.state = {};
     }
 
-    componentDidMount() {
-
-    }
-
-    componentWillUnmount() {
-        
-    }
-
     render() {
         return (
             <div className="app-shell">

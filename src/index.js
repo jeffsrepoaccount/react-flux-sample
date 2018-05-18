@@ -2,7 +2,6 @@ import React from 'react';
 import ReactDOM from 'react-dom';
 import { BrowserRouter, Switch, Route } from 'react-router-dom'
 
-import Shell        from './components/Shell.jsx';
 import Dashboard    from './components/Dashboard.jsx';
 import AddTodo      from './components/AddTodo.jsx';
 import NotFound     from './components/errors/NotFound.jsx';

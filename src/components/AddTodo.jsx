@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import { Redirect } from 'react-router-dom';
 
-import Shell from './Shell.jsx';
+import Shell    from './layout/Shell.jsx';
 import TodoForm from './forms/TodoForm.jsx';
 
 export default class AddTodo extends Component {
@@ -13,13 +13,6 @@ export default class AddTodo extends Component {
         };
 
         this.onCancel = this.onCancel.bind(this);
-    }
-
-    componentDidMount() {
-    }
-
-    componentWillUnmount() {
-
     }
 
     render() {

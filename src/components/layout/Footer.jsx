@@ -5,15 +5,6 @@ import moment from 'moment';
 export default class Header extends Component {
     constructor(props) {
         super(props);
-
-        this.state = {};
-    }
-
-    componentDidMount() {
-    }
-
-    componentWillUnmount() {
-
     }
 
     render() {

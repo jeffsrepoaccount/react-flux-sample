@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 
-import { Container, Menu, Image } from 'semantic-ui-react'
+import { Container, Menu, Icon } from 'semantic-ui-react'
 import { Link } from 'react-router-dom';
 
 export default class Header extends Component {
@@ -15,12 +15,8 @@ export default class Header extends Component {
                     <Container>
                         <Menu.Item as='li' header>
                           <Link to="/">
-                              <Image
-                                size='mini'
-                                src='/static/logo.png'
-                                style={{ marginRight: '1.5em' }}
-                              />
-                              Jeff's TODO List
+                              <Icon name="checkmark box" />
+                              Todo Manager Elite
                             </Link>
                         </Menu.Item>
                     </Container>

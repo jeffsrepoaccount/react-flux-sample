@@ -4,25 +4,25 @@ import Actions from '../actions';
 let actions = {
     list: () => {
         AppDispatcher.dispatch({
-            type: Actions.TODO_FETCH
+            type: Actions.PERSON_FETCH
         });
     },
     delete: (todo) => {
         AppDispatcher.dispatch({
-            type: Actions.TODO_DELETE,
+            type: Actions.PERSON_DELETE,
             id: todo.id
         });
     },
     update: (id, todo) => {
         AppDispatcher.dispatch({
-            type: Actions.TODO_UPDATE,
+            type: Actions.PERSON_UPDATE,
             id: todo.id,
             data: todo
         });
     },
     create: (data) => {
         AppDispatcher.dispatch({
-            type: Actions.TODO_CREATE,
+            type: Actions.PERSON_CREATE,
             data: data
         });
     },
@@ -33,6 +33,6 @@ let actions = {
             actions.create(data);
         }
     }
-}
+};
 
 export default actions;

@@ -48,7 +48,8 @@ export default class Todo extends Component {
                 }
                 {this.state.editing ?
                     <div style={{maxWidth: '80%' }}>
-                        <TodoForm todo={todo} onCancel={this.cancelEdit} />
+                        <TodoForm todo={todo} onClose={this.cancelEdit}
+                            person={this.props.person} />
                     </div>
                     : todo.title
                 }
@@ -62,7 +63,7 @@ export default class Todo extends Component {
                 >
                     <Header icon="warning circle" content="Warning" />
                     <Modal.Content>
-                        <h3>This will semi-permanently delete the following life goal:</h3>
+                        <h3>This will delete the following life goal:</h3>
                         
                         <h3>
                             <em>{this.props.todo.title}</em>
@@ -70,7 +71,7 @@ export default class Todo extends Component {
                     </Modal.Content>
                     <Modal.Actions>
                         <Button color="green" onClick={this.confirmDelete} inverted>
-                            <Icon name='checkmark' /> JUST.. DO IT
+                            <Icon name='checkmark' /> Yes, I'm Sure
                         </Button>
                         <Button color="red" onClick={this.cancelDelete} inverted>
                             <Icon name='close' /> Nevermind
@@ -81,10 +82,8 @@ export default class Todo extends Component {
         );
     }
 
-    cancelEdit(e) {
-        e.preventDefault();
+    cancelEdit() {
         this.setState({ editing: false });
-        return false;
     }
 
     cancelDelete(e) {

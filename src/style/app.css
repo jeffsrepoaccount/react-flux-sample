@@ -5,10 +5,16 @@
 }
 
 .app-footer {
-    text-align: right;
     padding: 3em 1em 0 0;
-    background: #ccc;
     min-height: 100px;
+    position: relative;
+}
+
+.app-footer .copyright {
+    position: absolute;
+    bottom: 1em;
+    right: 1em;
+    font-size: smaller;
 }
 
 .pull-right {

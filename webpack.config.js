@@ -1,6 +1,6 @@
 var config = {
     entry: {
-        'my.app': __dirname + '/src/index.js'
+        'todo-manager.elite': __dirname + '/src/index.js'
     },
     module: {
         rules: [
